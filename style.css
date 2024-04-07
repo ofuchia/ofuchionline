@@ -1,0 +1,80 @@
+body {
+    /* Add a background color*/
+    background-color: mistyrose;
+    font-family: Arial, "Times New Romnan", sans-serif;
+    font-size: 16px;
+    color: black;
+  }
+  
+  .main h2{
+    font-family: Courier, "Times New Roman";
+    text-align: center;
+  }
+  
+  .main img {
+    display:block;
+    width: 500px;
+    height: 500px;
+    /*maybe put in flex box to center?*/
+  }
+  /*figure out how to center*/
+  .rita-img{
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer{
+    text-align: center;
+    background-color: #CCCCFF;
+    height: 100px;
+    line-height: center;
+  }
+  
+  /* Navbar */
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    position: relative; /*? what does this do*/
+    overflow: hidden; /*? what do they do*/
+  }
+  
+  .navbar li {
+    display: inline-block; /*doesnt add line breaks after elements so they can be side to side*/
+    margin: 10px;
+  }
+  
+  .navbar a{
+    text-decoration: none;
+    text-align: center;
+    font-family: Arial;
+    color: brown;
+    font-size: 16px;
+    
+  }
+  
+  /*links*/
+  
+  /*unvisited link*/
+  .navbar a:link {
+    color: #FF69B4;
+  }
+  
+  /*visited link*/
+  .navbar a:visited {
+    color: darkgoldenrod;
+  }
+  
+  /*hovering*/
+  .navbar a:hover {
+    color: darkseagreen;
+    font-weight: bold;
+  }
+  
+  /*on click*/
+  .navbar a:active {
+    color: yellow
+  }
+  
+  
