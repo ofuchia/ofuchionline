@@ -1,73 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ofuchionline</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about-me">About Me</a></li>
+          <!--jumps down to the About Me section*/-->
+          <li>
+            <a href="https://ofuchiwrites.substack.com/" target="_blank"
+              >Written Works</a
+            >
+          </li>
+          <li>
+            <img style="height: 150px; width: 150px" id="logo"
+            src="./images/icon.jpg"
+          </li>
+          <li>
+            <a href="https://www.instagram.com/plusotra" target="_blank"
+              >Visual Art</a
+            >
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@ofuchi" target="_blank"
+              >YouTube Channel</a
+            >
+          </li>
+          <li>
+            <a href="https://www.instagram.com/ofuchiwrites" target="_blank"
+              >Bookstagram</a
+            >
+          </li>
+        </ul>
+      </header>
+      <main>
+        <article class="item main-article">
+          The Main Article!
+          <h1>Hello World!</h1>
+          <br />
+          <p>
+            My name is Ofuchi! I am a 23 year old Software Developer and this is
+            my personal website!
+          </p>
+        </article>
+        <aside class="item sidebar-left">
+          
+          <img
+            id="thumbnail"
+            src="./img/web_pixel_stand.png"
+            style="height: 160px"
+          />
+        </aside>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width"> <!--allows page to be responsive depending on screen of device -->
-  <title>ofuchi online</title>
-  
-  <!--adding icon to webtab-->
-  <link rel="icon" href="./images/icon.jpg"> 
-  
-  <!-- linking to css sheets-->
-  <link href="reset.css" rel="stylesheet" type="text/css" />
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link href="reset-webview.css" rel="stylesheet" type="text/css" />
-</head>
+        <aside class="item sidebar-right">Right Sidebar</aside>
+      </main>
+      <footer>
+        <p>.❀。• *₊°。 ❀°。 hope you have a splendid day .❀。• *₊°。 ❀°。</p>
+      </footer>
+    </div>
+  </body>
 
-<body>
-  <!--Navbar Code -->
-  <div class="navbar">
-     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#about-me">About Me</a></li> <!--jumps down to the About Me section*/-->
-      <li><a href="https://ofuchiwrites.substack.com/"
-          target="_blank">Written Works</a></li>
-      <li><a href="https://www.instagram.com/plusotra"
-          target="_blank">Visual Art</a></li>
-       <li><a href="https://www.youtube.com/@ofuchi" 
-         target="_blank">YouTube Channel</a></li>
-        <li><a href="https://www.instagram.com/ofuchiwrites" 
-          target="_blank">Bookstagram</a></li>
-    </ul> 
-  </div>
-  
-  <header>
-    <img src= "./images/header-img.jpg" alt="photos of my plants in font" id= "header-image"/>
-   
-  </header>
-  <!--- Main --->
-  <div class="main"> 
+  <script language="javascript" type="text/javascript">
+    var image = document.getElementById("thumbnail");
+    var images = ["./img/web_pixel_stand.png", "./img/web_pixel_wave.png"];
+    var index = 0;
 
-    <h1 id="opening-text"> ~ Your Virtual Third Space ~</h1>
-    <!-- <img src= "./images/rita.jpeg" alt="Drawing of my friend Rita" class="rita-img"/> -->
-    
-    <!--about me section-->
-    <h2 id= "about-me"> ‧₊˚❀༉‧₊˚.About Me ‧₊˚❀༉‧₊˚.</h2>
-    <img src= "./images/selfie.jpg" alt="A photo of myself, taken inside a car" class="selfie"/>
-    <p> Hello! My name is Ofuchi and I am a 22 year old Computer Science and Spanish double degree. In a couple of weeks, I'll have to figure out how to introduce myself without school as I'd have graduatated! It might end up sounding a bit like this:
-      <br/>
-      <br/>
-      Hello! My name is Ofuchi and I am a 23 year old creator and creative who loves being in the sun, being in the water, and being in bed with a good book. 
-    <br/>
-    <br/>
-    <h3>Things I've been fond of as late</h3>
-    <img src= "./images/pluty.jpg" alt="A photo of my cat, sitting on top of my journal" class="selfie"/>
-    <p>My cat Pluto and the way he disturbs me in the morning</p>
-  
-    <img src= "./images/beach.jpg" alt="A photo of the beach" class="selfie"/>
-    <p>Water. I love beaches. </p>
-  
-  
-  </div>
-  
-  
-  <!--footer-->
-  <div class="footer">
-    <p> .❀。• *₊°。 ❀°。 hope you have a splendid day .❀。• 
-      *₊°。 ❀°。  
-    </p>
-  </div>
-</body>
+    function changeImage() {
+      image.src = images[index];
+      index = (index + 1) % images.length;
+    }
 
+    setInterval(changeImage, 450);
+  </script>
 </html>
