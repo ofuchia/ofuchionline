@@ -5,14 +5,13 @@ html{
 }
 main{
   display: flex;
-  
 }
 
 .main-article{
   display: flex;
   flex-direction: column;
   font-family: 'Times New Roman', Times, serif;
-
+  align-items: center;
 }
 
 .main-article img{
@@ -42,35 +41,51 @@ main{
   font-family: 'Times New Roman', Times, serif;
   font-size: 20px;
 }
-.item{
-  font-size: 1rem;
-  line-height: 1;
+.item{ /*is this needed? for two nested boxes can this be moved to main tag?*/
+  /* font-size: 1rem; */
+  /* line-height: 1; small difference */
   text-align: center;
-  padding: 3rem 1rem;
-  background: #F8BBD0;
+  padding: 3rem 1rem; /*internal spacing of box*/
+  /* background: #F8BBD0;
   border: 6px solid #E91E63;
-  color: #E91E63;
-  margin: 6px;
-  font-style: normal;
+  color: #E91E63; */
+  margin: 10px; /*space between boxes*/
+  /* font-style: normal; */
+}
+
+main .main-article h1{
+  /*how to make it larger in height?*/
+  background-color: #E91E63;
+  color:whitesmoke;
+  border-radius: 500px;
+  font-size: 4rem;
+}
+
+main .main-article p{
+  background-color: #E91E63;
+  color:whitesmoke;
+  border-radius: 500px;
+  font-size: 1rem;
 }
 
 footer{
-  font-size: 1.5rem;
-  line-height: 1;
+  font-size: 1rem;
+  /* line-height: 1; */
   text-align: center;
-  padding: 3rem 1rem;
+  padding: 1rem 1rem;
   background: #F8BBD0;
-  border: 6px solid #E91E63;
+  /* border: 6px solid #E91E63; */
   color: #E91E63;
   margin: 6px;
+  /*make this fit to screen full width*/
 }
 
 article.item{
   border: 6px solid #9c27b0;
   background-color: #e1bee7;
-  color: #9c27b0;
+  /* color: #9c27b0; dictates color of main-article and left sidebar text */
   order: 2;
-  flex: 3;  /* flex verticle by 1/3.*/
+  flex: 3;  /* flex verticle by 1/3. bro..this applies to both children boxes.*/
 
 }
 
