@@ -1,11 +1,17 @@
 html{
-  background: #FCE4EC;
+  background: #fffbfc;
+
   font-family: Arial;
   /* text-transform: uppercase; */
 }
 main{
   display: flex;
 }
+
+/* body {
+  background-repeat: no-repeat;
+  background-image: url("images/cal-bg.jpg");
+} */
 
 .main-article{
   display: flex;
@@ -40,6 +46,7 @@ main{
   text-decoration: none; /*remove lines under text*/
   font-family: 'Times New Roman', Times, serif;
   font-size: 20px;
+  
 }
 .item{ /*is this needed? for two nested boxes can this be moved to main tag?*/
   /* font-size: 1rem; */
@@ -51,6 +58,11 @@ main{
   color: #E91E63; */
   margin: 10px; /*space between boxes*/
   /* font-style: normal; */
+}
+
+h1 .sidebar-left{
+  font-size: large;
+  font-weight: bolder;
 }
 
 main .main-article h1{
@@ -72,20 +84,24 @@ footer{
   font-size: 1rem;
   /* line-height: 1; */
   text-align: center;
+  
   padding: 1rem 1rem;
-  background: #F8BBD0;
+  background: #fffbfc;
   /* border: 6px solid #E91E63; */
   color: #E91E63;
   margin: 6px;
-  /*make this fit to screen full width*/
+  /*make this center to screen full width*/
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
-article.item{
+div.item{
   border: 6px solid #9c27b0;
   background-color: #e1bee7;
   /* color: #9c27b0; dictates color of main-article and left sidebar text */
   order: 2;
-  flex: 3;  /* flex verticle by 1/3. bro..this applies to both children boxes.*/
+  flex: 1;  /* flex verticle by 1/3. bro..this applies to both children boxes.*/
 
 }
 
