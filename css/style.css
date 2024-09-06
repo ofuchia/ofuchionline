@@ -1,0 +1,144 @@
+html{
+  background: #FAF9F6;
+
+  font-family: Arial;
+  /* text-transform: uppercase; */
+}
+main{
+  display: flex;
+}
+
+/* body {
+  background-repeat: no-repeat;
+  background-image: url("images/cal-bg.jpg");
+} */
+
+.main-article{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Times New Roman', Times, serif;
+  align-items: center;
+}
+
+.main-article img{
+  height: 50%;
+  width: 50%;
+  /* display: block; */
+}
+
+.navbar ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar ul li{
+  background-color: #FAF9F6;
+  padding: 14px 16px;
+  border-radius: 100px;
+  box-shadow: 0px 0px 0px 1px #228B22 inset;
+  
+  
+}
+
+.navbar ul li a{
+  text-decoration: none; /*remove lines under text*/
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  color: #000000;
+  
+}
+.item{ /*is this needed? for two nested boxes can this be moved to main tag?*/
+  /* font-size: 1rem; */
+  /* line-height: 1; small difference */
+  text-align: center;
+  padding: 3rem 1rem; /*internal spacing of box*/
+  /* background: #F8BBD0;
+  border: 6px solid #E91E63;
+  color: #E91E63; */
+  margin: 10px; /*space between boxes*/
+  /* font-style: normal; */
+}
+
+h1 .sidebar-left{
+  font-size: large;
+  font-weight: bolder;
+}
+
+main .main-article h1{
+  /*how to make it larger in height?*/
+  background-color: #E91E63;
+  color:whitesmoke;
+  border-radius: 500px;
+  font-size: 4rem;
+}
+
+main .main-article p{
+  background-color: #E91E63;
+  color:whitesmoke;
+  border-radius: 500px;
+  font-size: 1rem;
+}
+
+footer{
+  font-size: 1rem;
+  /* line-height: 1; */
+  text-align: center;
+  
+  padding: 1rem 1rem;
+  background: #FAF9F6;
+  /* border: 6px solid #E91E63; */
+  color: #228B22;
+  margin: 6px;
+  /*make this center to screen full width*/
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+div.item{
+  border: 6px solid #9c27b0;
+  background-color: #e1bee7;
+  /* color: #9c27b0; dictates color of main-article and left sidebar text */
+  order: 2;
+  flex: 1;  /* flex verticle by 1/3. bro..this applies to both children boxes.*/
+
+}
+
+.sidebar-left{
+  background-color: #c5cae9;
+  border: 6px solid #3f51b5;
+  color: #3f51b5;
+  order: 1;
+  flex:1;  /* flex horizontal; either by 1 or 2.*/
+  height: max-content; /*height of flexbox is size of content*/
+
+}
+/* .sidebar-right{
+  background-color: #b2dfdb;
+  border: 6px solid #009688;
+  color: #009688;
+  order: 3;
+  flex: 1
+} */
+
+@media screen and (max-width: 575px){
+  main{
+  
+    flex-direction: column;
+    /* flex:2; */
+      
+  }
+  .sidebar-left{
+      order: 2;
+  }
+}
+
+#logo {
+  width: 200px;
+  height: 100%;
+  border-radius: 100px;
+}
+
