@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Gallery</title>
+    <link rel="stylesheet" href="photo-gallery.css" />
+  </head>
+
+
+  <body>
+
+    <h1>LIFE AS OF LATE.</h1>
+    <pre>            ♡   ₊˚  
+      ꒰ ˶• ༝ •˶꒱       ♡‧₊˚    ♡
+      ./づ~ :¨·.·¨:     ₊˚  
+               `·..·‘    ₊˚   ♡</pre>
+    
+
+    <div class="full-img" id="fullImgBox">
+      <img src="images/img1.jpg" id="fullImg" />
+      <span onclick="closeFullImg()">x</span>
+    </div>
+    
+    <div class="img-gallery">
+      <img id="first" src="images/img1.jpg" onclick="openFullImg(this.src)" />
+      <img id="second" src="images/img2.jpg" onclick="openFullImg(this.src)" />
+      <img id="third" src="images/img3.jpg" onclick="openFullImg(this.src)" />
+      <img id="fourth" src="images/img4.jpg" onclick="openFullImg(this.src)" />
+      <img id="fifth" src="images/img5.jpg" onclick="openFullImg(this.src)" />
+      <img id="sixth" src="images/img6.jpg" onclick="openFullImg(this.src)" />
+      <img id="seventh" src="images/img7.png" onclick="openFullImg(this.src)" />
+      <img id="eight" src="images/img8.jpg" onclick="openFullImg(this.src)" />
+    </div>
+
+
+    <img id="neptune-text" src="images/neptune.png">
+  
+    <svg viewBox='0 0 100 100'>
+      <defs>
+        <pattern id='g-image' width='100' height='100' patternUnits='userSpaceOnUse'>
+          <image xlink:href='images/img9.jpg' width='100' height='100' />
+        </pattern>
+      </defs>
+      <path d='M0,25 L33,25 50,0 66,25 99,25 75,50 99,75 66,75 50,100 33,75  0,75 25,50z' /> <!--path is the star shape-->
+    </svg>
+
+
+    <script>
+      var fullImgBox = document.getElementById("fullImgBox");
+      var fullImg = document.getElementById("fullImg");
+
+      function openFullImg(pic) {
+        fullImgBox.style.display = "flex"; //changing the display in CSS, making it visible
+        fullImg.src = pic; //updating the src for fullImg
+      }
+
+      function closeFullImg() {
+        fullImgBox.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
