@@ -59,7 +59,7 @@ h1{
 
 pre{
   position: relative;
-  top: 250px;
+  top: 180px;
   left: 180px;
 }
 
@@ -85,28 +85,28 @@ pre{
   position:absolute;
   height: 100px;
   width: 120px;
-  top: 370px;
-  left: 460px;
+  top: 430px;
+  left: 470px;
 }
 
 #redtape{
   position:absolute;
   height: 100px;
   width: 120px;
-  top: 425px;
+  top: 485px;
   left: 470px;
 }
 
 #hat {
   position:absolute;
-  top: 130px;
+  top: 180px;
   left: 490px;
   height: 110px;
   width: 100px;
 }
 #pinktape{
   position:absolute;
-  top: 110px;
+  top: 160px;
   left: 460px;
   height: 80px;
   width: 80px;
@@ -114,7 +114,8 @@ pre{
 
 #neptune {
   position: absolute;
-  margin-left: 490px;
+  left: 970px;
+  top: 300px;
   height: 120px;
   width: 120px;
   z-index: -2;
@@ -122,8 +123,8 @@ pre{
 
 #flower2{
   position: absolute;
-  left: 1050px;
-  top: 340px;
+  left: 1080px;
+  top: 380px;
   height: 100px;
   width: 100px;
   z-index: -1;
@@ -131,15 +132,15 @@ pre{
 
 #neptune-text{
   position: absolute;
-  left: 1000px; 
-  bottom: 320px; 
+  left: 1020px; 
+  bottom: 290px; 
   width: auto; 
   height: 100px;
 }
 
 #mirror {
   position: absolute;
-  top: 620px;
+  top: 680px;
   height: 120px;
   width: 120px;
   border-radius: 50%;
@@ -147,7 +148,7 @@ pre{
 
 #tape4{
   position: absolute;
-  bottom: 130px;
+  bottom: 70px;
   left: 460px;
   height: 110px;
   width: 110px;
@@ -156,55 +157,55 @@ pre{
 
 #flower1{
   position: absolute;
-  left: 1350px;
-  top: 420px;
+  left: 1390px;
+  top: 480px;
   height: 100px;
   width: 100px;
 }
 
 #horse{
   position: absolute;
-  top: 375px;
-  left: 1405px;
+  top: 425px;
+  left: 1310px;
   height: 110px;
   width: auto;
 }
 
 #brown { 
   position: absolute;
-  bottom: 430px;
-  left: 1250px;
+  bottom: 400px;
+  left: 1320px;
   height: 120px;
   width: 120px;
 }
 
 #tape3{
   position: absolute;
-  bottom: 470px;
-  left: 1300px;
+  bottom: 450px;
+  left: 1360px;
   height: 120px;
   width: 120px;
 }
 
 #eclipse{
   position: absolute;
-  bottom: 190px;
-  left: 775px;
+  bottom: 140px;
+  left: 800px;
   height: 120px;
   width: 120px;
 }
 
 #flower3{
   position: absolute;
-  bottom: 160px;
-  left: 820px;
+  bottom: 100px;
+  left: 840px;
   height: 100px;
   width: 150px;
 }
 
 #tape2{
   position: absolute;
-  bottom: 290px;
+  bottom: 240px;
   left: 750px;
   height: 50px;
   width: 120px;
