@@ -10,7 +10,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  overflow: hidden; /*makes webstie not scrollable*/
+  overflow: hidden; 
   
 } 
 
@@ -25,18 +25,17 @@ h1{
 
 pre{
   position: relative;
-  top: 170px;
-  left: 25px;
+  top: 250px;
+  left: 180px;
 }
 
 .img-gallery {
-  width: 80%;
-  /* margin: 100px auto 50px; 100px top, auto l and r, 50 bottom*/
+  width: 10%;
   margin-top: 100px;
-  margin-left: 400px;
+  margin-left: 450px;
   display: grid;
-  grid-template-columns: repeat(4, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(4, minmax(170px, 1fr));
+  row-gap: 10px;
 }
 
 .img-gallery img {
@@ -46,78 +45,77 @@ pre{
   cursor: pointer;
 }
 
+
+
+#dishes {
+  position:absolute;
+  height: 100px;
+  width: 120px;
+  top: 370px;
+  left: 460px;
+}
+
+#hat {
+  position:absolute;
+  top: 130px;
+  left: 490px;
+  height: 110px;
+  width: 100px;
+}
+
+#neptune {
+  position: absolute;
+  margin-left: 490px;
+  height: 120px;
+  width: 120px;
+}
+
 #neptune-text{
-  position: relative;
-  left: 1250px; 
-  bottom: 660px; 
-  width: auto; /*height and width for the SVG cause it's rel to that*/
+  position: absolute;
+  left: 1000px; 
+  bottom: 320px; 
+  width: auto; 
   height: 100px;
 }
 
-
-#first {
-  /*use margin to not disturb the shadow on hover*/
-  height: 130px;
-  width: 150px;
-  margin-top: 280px;
-  margin-left: -10px;
-  margin-bottom: 80px; /*adds space between first and the one under it*/
- 
-}
-
-#second {
-  margin-top: 130px;
-  margin-left: 10px;
-  height: 120px;
-}
-
-#third {
-  margin-top: 1rem; /*looks better with 1rm than 1rem. but rm isnt a measurement so?*/
-  margin-left: 50px;
+#mirror {
+  position: absolute;
+  top: 600px;
   height: 120px;
   width: 120px;
-  /* transform: rotate(10deg); overwriting hover's*/
-}
-
-#fourth {
-  /* transform: rotate(-11deg); */
-  height: 120px;
-  width: 120px;
-  margin-left: 60px;
-  margin-top: 10px;
   border-radius: 50%;
 }
 
-#fifth{
-  position: relative;
-  top: -40px;
-  left: -65px;
+#horse{
+  position: absolute;
+  top: 375px;
+  left: 1405px;
   height: 110px;
   width: auto;
-  /* margin-left: 185px;
-  margin-top: 50px; */
 }
 
-#sixth{
-  height: 100px;
-  width: 100px;
-  position: relative;
-  bottom: 80px;
-  left:20px;
-}
-
-#seventh{
-  position: relative;
-  bottom:80px;
-  left: 40px;
+#brown { 
+  position: absolute;
+  bottom: 430px;
+  left: 1250px;
   height: 120px;
+  width: 120px;
 
 }
 
-#eight{
-  position: relative;
-  bottom:225px;
-  right: 500px;
+#eclipse{
+  position: absolute;
+  bottom: 190px;
+  left: 775px;
+  height: 120px;
+  width: 120px;
+
+}
+
+#tart{
+  position: absolute;
+  bottom:430px;
+  left: 620px;
   height: 110px;
   width: 110px;
 }
