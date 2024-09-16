@@ -33,7 +33,7 @@ html{
 main{
     display: flex;
 }
-.container{
+.container{ /*was conflated with index.html container before navbar*/
     display: flex;
     flex-direction: column;
     align-items: center;

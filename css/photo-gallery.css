@@ -5,7 +5,7 @@
 }
 
 body {
-  background: url("/images/calbg.jpg") no-repeat center center fixed;
+  background: url("/images/bg3.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -22,6 +22,40 @@ h1{
   left: 50px;
   top: 300px;
 }
+
+.navbar ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar ul li{
+  background-color: #FAF9F6;
+  padding: 14px 16px;
+  border-radius: 100px;
+  box-shadow: 0px 0px 0px 1px #228B22 inset;
+}
+
+.navbar ul li:nth-child(3):nth-last-child(3){ /*selecting middle child*/
+  box-shadow: none;
+
+}
+
+.navbar ul li a{
+  text-decoration: none; /*remove lines under text*/
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  color: #000000;
+}
+
+#logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+}
+
 
 pre{
   position: relative;
