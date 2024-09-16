@@ -72,7 +72,7 @@ footer{
   border-radius: 100%;
 }
 /*about-me.html*/
-.container{
+.container1{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -82,3 +82,18 @@ footer{
   max-width: 50%;
 }
 
+/*need to figure out what to display. windows into my life.*/
+.container2{
+  display: grid;
+  padding: 10%;
+  overflow: hidden;
+
+}
+#receptify50{
+  width: 50%;
+  height:auto;
+}
+#receptify10{
+  width: 100vw;
+  height:100%;
+}
