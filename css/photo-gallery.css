@@ -10,7 +10,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  overflow: hidden; 
+  /* overflow: hidden;  */
   
 } 
 
@@ -100,7 +100,14 @@ pre{
   left: 1250px;
   height: 120px;
   width: 120px;
+}
 
+#tape3{
+  position: absolute;
+  bottom: 470px;
+  left: 1300px;
+  height: 120px;
+  width: 120px;
 }
 
 #eclipse{
@@ -112,12 +119,29 @@ pre{
 
 }
 
+#tape2{
+  position: absolute;
+  bottom: 290px;
+  left: 750px;
+  height: 50px;
+  width: 120px;
+}
+
 #tart{
   position: absolute;
   bottom:430px;
   left: 620px;
   height: 110px;
   width: 110px;
+}
+
+#tape1{
+  position: absolute;
+  bottom:430px;
+  left: 680px;
+  height: 110px;
+  width: 110px;
+  transform: rotate(50deg);
 }
 
 .img-gallery img:hover:nth-child(odd)  { 
