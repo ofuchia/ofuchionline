@@ -5,7 +5,7 @@
 }
 
 body {
-  background: url("/images/cal-bg.jpg") no-repeat center center fixed;
+  background: url("/images/calbg.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -28,12 +28,6 @@ pre{
   top: 170px;
   left: 25px;
 }
-
-/* .audio-player{
-  position: relative;
-  top: 250px;
-  left: 30px;
-} */
 
 .img-gallery {
   width: 80%;
@@ -127,15 +121,6 @@ pre{
   height: 110px;
   width: 110px;
 }
-*/
-
-svg { /*width and height used to move svg image around*/
-  width: 100px;
-  height: 200px;
-}
-path {
-  fill: url(#g-image);
-}
 
 .img-gallery img:hover:nth-child(odd)  { 
   transform: scale(0.8) rotate(-15deg);
@@ -148,19 +133,6 @@ path {
   border-radius: 20px;
   box-shadow: 0 32px 75px rgba(68, 75, 136, 0.2);
 }
-
-/* .img-gallery img:hover {
-  transform: scale(0.8) rotate(-15deg);
-  border-radius: 20px;
-  box-shadow: 0 32px 75px rgba(68, 75, 136, 0.2);
-} */
-
-svg:hover {
-  transform: scale(0.8) rotate(15deg);
-  /* border-radius: 20px; */
-  /* box-shadow: 0 32px 75px rgba(68, 75, 136, 0.2); */
-}
-
 
 .full-img {
   width: 100%;
