@@ -10,7 +10,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  /* overflow: hidden;  */
+  overflow: hidden; 
   
 } 
 
@@ -105,11 +105,12 @@ pre{
 
 #mirror {
   position: absolute;
-  top: 600px;
+  top: 620px;
   height: 120px;
   width: 120px;
   border-radius: 50%;
 }
+
 #tape4{
   position: absolute;
   bottom: 130px;
