@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grid Gallery</title>
     <link rel="stylesheet" href="css/photo-gallery.css" />
+
+    <!-- SCM Music Player https://www.scmplayer.net -->
+    <script
+      type="text/javascript"
+      src="https://www.scmplayer.net/script.js"
+      data-config="{'skin':'skins/simpleGreen/skin.css','volume':13,'autoplay':true,'shuffle':false,'repeat':1,'placement':'top','showplaylist':false,'playlist':[
+     {'title':'The World Above','url':'https://www.youtube.com/watch?v=AQb8q1GALwk&ab_channel=AlicePhoebeLou-Topic'},
+     {'title':'Triptych','url':'https://www.youtube.com/watch?v=NJeuNdGaY5k&ab_channel=Samia'},
+     {'title':'Utah','url':'https://www.youtube.com/watch?v=XqWH9LCoASw&ab_channel=Samia'},
+     {'title':'Somebody Come Through','url':'https://www.youtube.com/watch?v=RPOC5n2qY1w&ab_channel=MDSHCoffeeHouse'},
+     {'title':'Be Your Own Muse','url':'https://www.youtube.com/watch?v=FrNO61cerfo&ab_channel=HaleyBlais'}
+     ]}"
+    ></script>
+    <!-- SCM Music Player script end -->
   </head>
 
   <body>
@@ -45,38 +59,19 @@
     </div>
 
     <img id="neptune-text" src="images/neptune.png" />
-
-    <!-- <svg viewBox="0 0 100 100">
-      <defs>
-        <pattern
-          id="g-image"
-          width="100"
-          height="100"
-          patternUnits="userSpaceOnUse"
-        >
-          <image xlink:href="images/img9.jpg" width="100" height="100" />
-        </pattern>
-      </defs>
-      <path
-        d="M0,25 L33,25 50,0 66,25 99,25 75,50 99,75 66,75 50,100 33,75  0,75 25,50z"
-      />
-      path is the star shape
-    </svg> -->
-
-    <!-- <audio controls autoplay="/audio/The_World_Above.mp3"></audio> -->
-
-    <script>
-      var fullImgBox = document.getElementById("fullImgBox");
-      var fullImg = document.getElementById("fullImg");
-
-      function openFullImg(pic) {
-        fullImgBox.style.display = "flex"; //changing the display in CSS, making it visible
-        fullImg.src = pic; //updating the src for fullImg
-      }
-
-      function closeFullImg() {
-        fullImgBox.style.display = "none";
-      }
-    </script>
   </body>
+
+  <script>
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+
+    function openFullImg(pic) {
+      fullImgBox.style.display = "flex"; //changing the display in CSS, making it visible
+      fullImg.src = pic; //updating the src for fullImg
+    }
+
+    function closeFullImg() {
+      fullImgBox.style.display = "none";
+    }
+  </script>
 </html>
