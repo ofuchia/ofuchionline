@@ -72,7 +72,7 @@ footer{
   border-radius: 100%;
 }
 /*about-me.html*/
-.container1{
+.aboutme-container{
   display: flex;
   flex-direction: column;
   align-items: center;
