@@ -135,6 +135,7 @@ pre{
   bottom: 290px; 
   width: auto; 
   height: 100px;
+  z-index: 1;
 }
 
 #mirror {
