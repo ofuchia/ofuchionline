@@ -4,25 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Real Life</title>
-    <link rel="icon" type="image/icon" href="./images/icon.jpg">
+    <!-- <link rel="icon" type="image/icon" href="./images/icon.jpg"> -->
     <link rel="stylesheet" href="css/photo-gallery.css" />
-
-    <!-- SCM Music Player https://www.scmplayer.net -->
-    <script
-      type="text/javascript"
-      src="https://www.scmplayer.net/script.js"
-      data-config="{'skin':'skins/simpleGreen/skin.css','volume':13,'autoplay':true,'shuffle':false,'repeat':1,'placement':'top','showplaylist':false,'playlist':[
-     {'title':'The World Above','url':'https://www.youtube.com/watch?v=AQb8q1GALwk&ab_channel=AlicePhoebeLou-Topic'},
-     {'title':'Triptych','url':'https://www.youtube.com/watch?v=NJeuNdGaY5k&ab_channel=Samia'},
-     {'title':'Utah','url':'https://www.youtube.com/watch?v=XqWH9LCoASw&ab_channel=Samia'},
-     {'title':'Somebody Come Through','url':'https://www.youtube.com/watch?v=RPOC5n2qY1w&ab_channel=MDSHCoffeeHouse'},
-     {'title':'Be Your Own Muse','url':'https://www.youtube.com/watch?v=FrNO61cerfo&ab_channel=HaleyBlais'}
-     ]}"
-    ></script>
-    <!-- SCM Music Player script end -->
   </head>
 
-  <body>
+  <body
     <header class="navbar">
       <ul>
         <li><a href="about-me.html">About Me</a></li>
@@ -89,9 +75,14 @@
       <img id="tape4" src="images/tape1.png" />
       
   </body>
-
+  
+  <!-- SCM Music Player https://www.scmplayer.net -->
+  <script type="text/javascript" src="https://www.scmplayer.net/script.js" 
+  data-config="{'skin':'skins/simpleGreen/skin.css','volume':13,'autoplay':true,'shuffle':false,'repeat':1,'placement':'top','showplaylist':false,'playlist':[{'title':'The World Above','url':'https://www.youtube.com/watch?v=AQb8q1GALwk&ab_channel=AlicePhoebeLou-Topic'},{'title':'Triptych','url':'https://www.youtube.com/watch?v=NJeuNdGaY5k&ab_channel=Samia'},{'title':'Utah','url':'https://www.youtube.com/watch?v=XqWH9LCoASw&ab_channel=Samia'},{'title':'Somebody Come Through','url':'https://www.youtube.com/watch?v=RPOC5n2qY1w&ab_channel=MDSHCoffeeHouse'},{'title':'Be Your Own Muse','url':'https://www.youtube.com/watch?v=FrNO61cerfo&ab_channel=HaleyBlais'}]}" ></script>
+  <!-- SCM Music Player script end -->
+  
   <script>
-    var fullImgBox = document.getElementById("fullImgBox");
+     var fullImgBox = document.getElementById("fullImgBox");
     var fullImg = document.getElementById("fullImg");
 
     function openFullImg(pic) {
@@ -103,4 +94,5 @@
       fullImgBox.style.display = "none";
     }
   </script>
+
 </html>

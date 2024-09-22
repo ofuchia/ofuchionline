@@ -1,27 +1,37 @@
 /*Style sheet for index and about-me*/
 
-html{
-  background: #FAF9F6;
+html {
+  background: #faf9f6;
 }
-main{
+
+.png-container {
   display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
-
+/* does this even exist? 
 .main-article{
   display: flex;
   flex-direction: column;
   font-family: 'Times New Roman', Times, serif;
   align-items: center;
-}
-
+} */
+/*
 .main-article img{
   height: 50%;
   width: 50%;
-  /* display: block; */
-}
+   display: block;
+}  */
+/* 
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-items: space-evenly;
+} */
 
-.navbar ul{
+.navbar ul {
+  /*shouldnt the parent container do the flexing? then adjust the elements/items?*/
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -29,42 +39,41 @@ main{
   margin: 0;
   padding: 0;
 }
-.navbar ul li{
-  background-color: #FAF9F6;
+.navbar ul li {
+  background-color: #faf9f6;
   padding: 14px 16px;
   border-radius: 100px;
-  box-shadow: 0px 0px 0px 1px #228B22 inset;
+  box-shadow: 0px 0px 0px 1px #228b22 inset;
 }
 
-.navbar ul li:nth-child(3):nth-last-child(3){ /*selecting middle child*/
+.navbar ul li:nth-child(3):nth-last-child(3) {
+  /*selecting middle child*/
   box-shadow: none;
-
 }
 
-.navbar ul li a{
+.navbar ul li a {
   text-decoration: none; /*remove lines under text*/
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 20px;
   color: #000000;
 }
 
-article{
+article {
   display: flex;
   flex-direction: column;
 }
 
-article img{
+article img {
   max-width: 50%;
   max-height: 100vh;
   margin: auto;
 }
 
-footer{
+footer {
   text-align: center;
-  background: #FAF9F6;
-  color: #228B22;
+  background: #faf9f6;
+  color: #228b22;
 }
-
 
 #logo {
   width: 100px;
@@ -72,30 +81,29 @@ footer{
   border-radius: 100%;
 }
 /*about-me.html*/
-.aboutme-container{
+.aboutme-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#me{
+#me {
   max-width: 50%;
 }
 
 /*need to figure out what to display. windows into my life.*/
-.container2{
+.container2 {
   display: grid;
   padding: 10%;
   overflow: hidden;
-
 }
-#receptify50{
+#receptify50 {
   width: 50%;
 }
-#receptify10{
+#receptify10 {
   width: 50%;
 }
-#thumbs{
+#thumbs {
   height: auto;
   width: 50%;
 }
