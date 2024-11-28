@@ -9,7 +9,7 @@
 }
 
 body {
-  background: url("../images/grid_bg.jpg") no-repeat center center fixed; /*.. to specify one level up bc images is outside of css directory. (for github pages).*/
+  background: url("../images/grid_bg.jpg") no-repeat center center ; /*.. to specify one level up bc images is outside of css directory. (for github pages).*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -61,87 +61,20 @@ h1{
 
 
 .img-gallery {
-  width: 70%;
-  margin-top: 100px; /*change unit so it works for varying devices*/ 
-  margin-left: 450px;
-  display: grid;
-  grid-template-columns: repeat(4, minmax(170px, 1fr));
-  row-gap: 1rem;
+  width: 80%;
+  margin: 100px auto 50px; /*change unit so it works for varying devices*/ 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
 }
 
 .img-gallery img {
-  /* height: 150px;
-  width: 150px; */
+  width: 100%;
   object-fit: cover;
   cursor: pointer;
+
 }
 
-
-#dishes {
-  /* position:absolute; */
-  height: 100px;
-  width: 100%;
-  /* top: 430px;
-  left: 470px; */
-}
-
-
-#camera-me {
-  /* position:absolute; */
-  /* top: 180px;
-  left: 490px; */
-  height: 110px;
-  width: 100px;
-}
-
-#neptune {
-  /* position: absolute;
-  left: 970px;
-  top: 300px; */
-  height: 120px;
-  width: 100%;
-}
-
-#mirror {
-  /* position: absolute;
-  top: 680px;
-  height: 120px; */
-  width: 100%;
-  border-radius: 50%;
-}
-
-#horse{
-  /* position: absolute;
-  top: 425px;
-  left: 1310px; */
-  height: 110px;
-  width: 100%;
-}
-
-#brown { 
-  /* position: absolute;
-  bottom: 400px;
-  left: 1320px; */
-  height: 50%;
-  width: 50%;
-}
-
-#eclipse{
-  /* position: absolute;
-  bottom: 140px;
-  left: 800px; */
-  height:50%;
-  width: 50%;
-}
-
-
-#tart{
-  /* position: absolute;
-  bottom:400px;
-  left: 630px; */
-  height: 50%;
-  width: 50%;
-}
 
 /* .img-gallery img:hover:nth-child(odd)  { 
   transform: scale(0.8) rotate(-15deg);
