@@ -39,15 +39,15 @@ html {
   margin: 0;
   padding: 0;
 }
-.navbar ul li {
-  background-color: #faf9f6;
+.navbar ul li{
+  background-color: rgb(232, 228, 217);
   padding: 14px 16px;
   border-radius: 100px;
-  box-shadow: 0px 0px 0px 1px #228b22 inset;
+  box-shadow: 0px 0px 0px 1px #486cc6 inset;
 }
 
-.navbar ul li:nth-child(3):nth-last-child(3) {
-  /*selecting middle child*/
+.navbar ul li:nth-child(3):nth-last-child(3){ /*selecting middle child*/
+  background-color: transparent; /*AMAZINGGG*/
   box-shadow: none;
 }
 

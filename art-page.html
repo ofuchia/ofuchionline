@@ -3,11 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Art</title>
+    <link rel="icon" type="image/icon" href="./images/icon.jpg">
+    <link rel="stylesheet" href="css/photo-gallery.css" />
 </head>
 <body>
-    *Insert oil paintings here* 
-    <br>
-    To be updated soon !
+
+    <header class="navbar">
+        <ul>
+          <li><a href="about-me.html">About Me</a></li>
+          <li>
+            <a href="written-works.html" target="_blank"
+              >Written Works</a
+            >
+          </li>
+          <li>
+            <a href="index.html">
+              <img
+                id="logo"
+                src="./images/icon.jpg"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="art-page.html" target="_blank"
+              >Visual Art</a
+            >
+          </li>
+          <li>
+            <a href="photo-gallery.html">Real Life</a>
+          </li>
+        </ul>
+      </header>
+
+    
+    <div class="img-gallery">
+        <img id="dishes" src="images/img1.jpg" onclick="openFullImg(this.src)" />
+        <img id="camera-me" src="images/alsome3.jpg" onclick="openFullImg(this.src)" />
+        <img id="neptune" src="images/neptune2.JPG" onclick="openFullImg(this.src)" />
+        <img id="mirror" src="images/thumbs.jpg" onclick="openFullImg(this.src)" />
+        <img id="horse" src="images/img5.jpg" onclick="openFullImg(this.src)" />
+        <img id="brown" src="images/img6.JPG" onclick="openFullImg(this.src)" />
+        <img id="eclipse" src="images/img7.png" onclick="openFullImg(this.src)" />
+        <img id="tart" src="images/img8.jpg" onclick="openFullImg(this.src)" />
+      </div>
 </body>
 </html>
