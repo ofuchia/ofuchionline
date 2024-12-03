@@ -1,0 +1,205 @@
+/*Style sheet for index and about-me*/
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+a {
+  text-decoration: none;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/*Blog*/
+#blog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  border-bottom: 1px solid rbga(0, 0, 0, 0.05);
+}
+
+.blog-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: columm;
+}
+
+.blog-heading h3 {
+  font-size: 2.4rem;
+  color: #2b2b2b;
+  font-weight: 600;
+}
+
+.blog-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+  flex-wrap: wrap;
+}
+
+.blog-box {
+  width: 350px;
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+  margin: 20px;
+}
+
+.blog-img {
+  width: 100%;
+  height: auto;
+}
+
+.blog-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.blog-text {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-text .blog-title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #272727;
+}
+
+.blog-text .blog-title:hover {
+  color: #f33c3c;
+  transition: all ease 0.3s;
+}
+
+.blog-text p {
+  color: #9b9b9b;
+  font-size: 0.9rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3; /*Also define the standard property 'line-clamp' for compatibility*/
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 20px 0px;
+}
+
+.blog-text a {
+  color: #0f0f0f;
+}
+
+.blog-text a:hover {
+  color: #f33c3c;
+  transition: all ease 0.3s;
+}
+
+@media (max-width: 1250px) {
+  .blog-box {
+    width: 300px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .blog-box {
+    width: 70%;
+  }
+
+  @media (max-width: 550px) {
+    .blog-box {
+      margin: 20px 10px;
+      width: 100%;
+    }
+    #blog {
+      padding: 20px;
+    }
+  }
+}
+/*Navbar*/
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+.navbar ul li {
+  background-color: rgb(232, 228, 217);
+  padding: 14px 16px;
+  border-radius: 100px;
+  box-shadow: 0px 0px 0px 1px #486cc6 inset;
+}
+
+.navbar ul li:nth-child(3):nth-last-child(3) {
+  /*selecting middle child*/
+  background-color: transparent; /*AMAZINGGG*/
+  box-shadow: none;
+}
+
+.navbar ul li a {
+  text-decoration: none; /*remove lines under text*/
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3vh; /*doesnt change when we downsize screen. use media query?*/
+  color: #000000;
+}
+/* Menu toggle button for mobile view */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  align-items: end; /*make hamberger on right-side of view*/
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  background-color: rgb(140, 191, 236);
+  height: 3px;
+  width: 25px;
+  margin: 5px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: rgb(217, 225, 232);
+    /* pale blue background for mobile view */
+  }
+  #logo {
+    /*i want this just to be a home button (js finding #logo and changing its html) or at least an oval*/
+    /* display: none; */
+    /* padding: 14px 16px; */
+    border-radius: 2px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
+
+#logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}

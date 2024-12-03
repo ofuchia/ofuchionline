@@ -1,42 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Written Works</title>
-    <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-    
+    <link rel="stylesheet" href="css/blog-style.css" />
+    <link rel="icon" type="image/icon" href="./images/icon.jpg" />
+  </head>
+  <body>
     <header class="navbar">
-        <ul>
-          <li><a href="about-me.html">About Me</a></li>
-          <!--jumps down to the About Me section*/-->
-          <li>
-            <a href="written-works.html" target="_blank"
-              >Written Works</a
-            >
-          </li>
-          <li>
-            <a href="index.html">
-              <img id="logo" src="./images/icon.jpg" />
-            </a>
-          </li>
-          <li>
-            <a href="art-page.html" target="_blank"
-              >Visual Art</a
-            >
-          </li>
-          <li>
-            <a href="photo-gallery.html">Real Life</a>
-          </li>
-        </ul>
-      </header>
-    Roses are red, <br/>
-    Violets are blue, <br/>
-    You might be here...but I have nothing for you <br/>
-    [YET].
+      <ul class = "nav-links">
+        <li><a href="about-me.html">About Me</a></li>
+        <li>
+          <a href="written-works.html" target="_blank">Written Works</a>
+        </li>
+        <li>
+          <a href="index.html">
+            <img id="logo" src="./images/icon.jpg" />
+          </a>
+        </li>
+        <li>
+          <a href="art-page.html" target="_blank">Visual Art</a>
+        </li>
+        <li>
+          <a href="photo-gallery.html">Real Life</a>
+        </li>
+      </ul>
 
-    
-</body>
+      <div class="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </header>
+
+    <!--Blog Section-->
+    <section id="blog">
+      <!--heading-->
+      <div class="blog-heading">
+        <h3>My Blog</h3>
+      </div>
+
+      <!--blog container-->
+      <div class="blog-container">
+
+        <!--box 1-->
+        <div class="blog-box">
+
+          <!--img-->
+          <div class="blog-img">
+            <img src="images/img4.jpg" alt="a photo of me and my cat pluto" />
+          </div>
+
+          <!--text-->
+          <div class="blog-text">
+            <span>21 May 2023 / Pluty Boy</span>
+            <a href ="#" class = "blog-title">What Is Pluto Thinking?</a>
+            <p>Some filler text because i Havent typed it out yet. No pressure tho! As it fills out im sure it'll look super cutey. For now though we just seeing what works and what doesnt and how to fix what doesn't. MVP.</p>
+            </p>
+            <a href="#">Read more</a>
+          </div>
+        </div>
+        
+        <!--box 2-->
+        <div class="blog-box">
+
+          <!--img-->
+          <div class="blog-img">
+            <img src="images/img4.jpg" alt="a photo of me and my cat pluto" />
+          </div>
+
+          <!--text-->
+          <div class="blog-text">
+            <span>21 May 2023 / Pluty Boy</span>
+            <a href ="#" class = "blog-title">What Is Pluto Thinking?</a>
+            <p>Some filler text because i Havent typed it out yet. No pressure tho! As it fills out im sure it'll look super cutey. For now though we just seeing what works and what doesnt and how to fix what doesn't. MVP.</p>
+            </p>
+            <a href="#">Read more</a>
+          </div>
+        </div>
+
+        <!--box 3-->
+        <div class="blog-box">
+
+          <!--img-->
+          <div class="blog-img">
+            <img src="images/img4.jpg" alt="a photo of me and my cat pluto" />
+          </div>
+
+          <!--text-->
+          <div class="blog-text">
+            <span>21 May 2023 / Pluty Boy</span>
+            <a href ="#" class = "blog-title">What Is Pluto Thinking?</a>
+            <p>Some filler text because i Havent typed it out yet. No pressure tho! As it fills out im sure it'll look super cutey. For now though we just seeing what works and what doesnt and how to fix what doesn't. MVP.</p>
+            </p>
+            <a href="#">Read more</a>
+          </div>
+        </div>
+        <!--box 4-->
+        <div class="blog-box">
+
+          <!--img-->
+          <div class="blog-img">
+            <img src="images/img4.jpg" alt="a photo of me and my cat pluto" />
+          </div>
+
+          <!--text-->
+          <div class="blog-text">
+            <span>21 May 2023 / Pluty Boy</span>
+            <a href ="#" class = "blog-title">What Is Pluto Thinking?</a>
+            <p>Some filler text because i Havent typed it out yet. No pressure tho! As it fills out im sure it'll look super cutey. For now though we just seeing what works and what doesnt and how to fix what doesn't. MVP.</p>
+            </p>
+            <a href="#">Read more</a>
+          </div>
+        </div>
+        <!--box 5-->
+        <div class="blog-box">
+
+          <!--img-->
+          <div class="blog-img">
+            <img src="images/img4.jpg" alt="a photo of me and my cat pluto" />
+          </div>
+
+          <!--text-->
+          <div class="blog-text">
+            <span>21 May 2023 / Pluty Boy</span>
+            <a href ="#" class = "blog-title">What Is Pluto Thinking?</a>
+            <p>Some filler text because i Havent typed it out yet. No pressure tho! As it fills out im sure it'll look super cutey. For now though we just seeing what works and what doesnt and how to fix what doesn't. MVP.</p>
+            </p>
+            <a href="#">Read more</a>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+  </body>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    });
+</script>
 </html>
