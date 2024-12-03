@@ -4,19 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ofuchionline</title>
-    <link rel="icon" type="image/icon" href="./images/icon.jpg">
+    <link rel="icon" type="image/icon" href="./images/icon.jpg" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
     <header class="navbar">
-      <ul>
+      <ul class = "nav-links">
         <li><a href="about-me.html">About Me</a></li>
-        <!--jumps down to the About Me section*/-->
         <li>
-          <a href="written-works.html" target="_blank"
-            >Written Works</a
-          >
+          <a href="written-works.html">Written Works</a>
         </li>
         <li>
           <a href="index.html">
@@ -24,16 +21,21 @@
           </a>
         </li>
         <li>
-          <a href="art-page.html" target="_blank"
-            >Visual Art</a
-          >
+          <a href="art-page.html">Visual Art</a>
         </li>
         <li>
           <a href="photo-gallery.html">Real Life</a>
         </li>
       </ul>
+
+      <div class="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </header>
-    <article class = png-container>
+
+    <article class="png-container">
       <img id="text1" src="./images/text1.PNG" />
       <img id="text2" src="./images/text2.PNG" />
       <img id="text3" src="./images/text3.PNG" />
@@ -45,4 +47,15 @@
       <p>.❀。• *₊°。 ❀°。 hope you have a splendid day .❀。• *₊°。 ❀°。</p>
     </footer>
   </body>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navLinks = document.querySelector(".nav-links");
+
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    });
+  </script>
 </html>

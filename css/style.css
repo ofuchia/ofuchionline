@@ -10,43 +10,22 @@ html {
   align-content: center;
 }
 
-/* does this even exist? 
-.main-article{
-  display: flex;
-  flex-direction: column;
-  font-family: 'Times New Roman', Times, serif;
-  align-items: center;
-} */
-/*
-.main-article img{
-  height: 50%;
-  width: 50%;
-   display: block;
-}  */
-/* 
-.navbar{
-  display: flex;
-  align-items: center;
-  justify-items: space-evenly;
-} */
-
 .navbar ul {
-  /*shouldnt the parent container do the flexing? then adjust the elements/items?*/
+  /*shouldnt the parent container do the flexing? then adjust the elements/items? yes.ul is flexing the li*/
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
-.navbar ul li{
+.navbar ul li {
   background-color: rgb(232, 228, 217);
   padding: 14px 16px;
   border-radius: 100px;
   box-shadow: 0px 0px 0px 1px #486cc6 inset;
 }
 
-.navbar ul li:nth-child(3):nth-last-child(3){ /*selecting middle child*/
+.navbar ul li:nth-child(3):nth-last-child(3) {
+  /*selecting middle child*/
   background-color: transparent; /*AMAZINGGG*/
   box-shadow: none;
 }
@@ -75,13 +54,62 @@ footer {
   color: #228b22;
 }
 
+/* Menu toggle button for mobile view */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  align-items: end; /*make hamberger on right-side of view*/
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  background-color: rgb(140, 191, 236);
+  height: 3px;
+  width: 25px;
+  margin: 5px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: rgb(217, 225, 232);
+    /* pale blue background for mobile view */
+  }
+
+  #logo {
+    /*i want this just to be a home button (js finding #logo and changing its html) or at least an oval*/
+    /* display: none; */
+    /* padding: 14px 16px; */
+    border-radius: 2px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
+
 #logo {
   width: 100px;
   height: 100px;
   border-radius: 100%;
 }
 /*about-me.html*/
-.aboutme-container {
+/* .aboutme-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -89,10 +117,10 @@ footer {
 
 #me {
   max-width: 50%;
-}
+} */
 
 /*need to figure out what to display. windows into my life.*/
-.container2 {
+/* .container2 {
   display: grid;
   padding: 10%;
   overflow: hidden;
@@ -106,4 +134,4 @@ footer {
 #thumbs {
   height: auto;
   width: 50%;
-}
+} */
