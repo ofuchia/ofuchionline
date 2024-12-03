@@ -76,11 +76,11 @@ h1{
 }
 
 
-/* .img-gallery img:hover:nth-child(odd)  { 
+.img-gallery img:hover:nth-child(odd)  { 
   transform: scale(0.8) rotate(-15deg);
   border-radius: 20px;
   box-shadow: 0 32px 75px rgba(68, 75, 136, 0.2);
-  /*maybe specify z index here?
+ 
 }
 
 .img-gallery img:hover:nth-child(even)  { 
@@ -88,7 +88,7 @@ h1{
   border-radius: 20px;
   box-shadow: 0 32px 75px rgba(68, 75, 136, 0.2);
 } 
-*/
+
 
 .full-img {
   width: 100%;
