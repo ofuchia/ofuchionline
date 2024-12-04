@@ -10,14 +10,14 @@ html {
   align-content: center;
 }
 
-.navbar ul {
+.nav-links {
   /*shouldnt the parent container do the flexing? then adjust the elements/items? yes.ul is flexing the li*/
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   list-style-type: none;
 }
-.navbar ul li {
+.nav-links li {
   background-color: rgb(232, 228, 217);
   padding: 14px 16px;
   border-radius: 100px;
