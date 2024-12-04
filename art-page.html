@@ -9,7 +9,7 @@
   </head>
   <body>
     <header class="navbar">
-      <ul>
+      <ul class="nav-links">
         <li><a href="about-me.html">About Me</a></li>
         <li>
           <a href="written-works.html">Written Works</a>
@@ -26,6 +26,12 @@
           <a href="photo-gallery.html">Real Life</a>
         </li>
       </ul>
+
+      <div class="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </header>
 
     <div class="img-gallery">
@@ -44,4 +50,16 @@
       <img id="mirko" src="images/mirko.jpg" onclick="openFullImg(this.src)" />
     </div>
   </body>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navLinks = document.querySelector(".nav-links");
+  
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    });
+  </script>
+  
 </html>

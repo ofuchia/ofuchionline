@@ -8,43 +8,32 @@
     <link rel="stylesheet" href="css/photo-gallery.css" />
   </head>
 
-  <body
+  <body  
     <header class="navbar">
-      <ul>
+      <ul class = "nav-links">
         <li><a href="about-me.html">About Me</a></li>
         <li>
-          <a href="written-works.html" target="_blank"
-            >Written Works</a
-          >
+          <a href="written-works.html">Written Works</a>
         </li>
         <li>
           <a href="index.html">
-            <img
-              id="logo"
-              src="./images/icon.jpg"
-            />
+            <img id="logo" src="./images/icon.jpg" />
           </a>
         </li>
         <li>
-          <a href="art-page.html" target="_blank"
-            >Visual Art</a
-          >
+          <a href="art-page.html">Visual Art</a>
         </li>
         <li>
           <a href="photo-gallery.html">Real Life</a>
         </li>
       </ul>
-    </header>
 
-      <!-- <pre>
-              ♡   ₊˚  
-        ꒰ ˶• ༝ •˶꒱       ♡‧₊˚    ♡
-        ./づ~ :¨·.·¨:     ₊˚  
-                `·..·‘    ₊˚   ♡
-        
-      <a href="pictures.html">LIFE AS OF LATE.</a>
-      </pre>
-       -->
+      <div class="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </header>
 
       <div class="full-img" id="fullImgBox">
         <img src="images/img1.jpg" id="fullImg" />
@@ -70,7 +59,7 @@
   <!-- SCM Music Player script end -->
   
   <script>
-     var fullImgBox = document.getElementById("fullImgBox");
+    var fullImgBox = document.getElementById("fullImgBox");
     var fullImg = document.getElementById("fullImg");
 
     function openFullImg(pic) {
@@ -82,5 +71,16 @@
       fullImgBox.style.display = "none";
     }
   </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  });
+</script>
 
 </html>

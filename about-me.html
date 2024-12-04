@@ -8,13 +8,12 @@
     <link rel="stylesheet" href="css/style.css" />
     <!--may have to change, depending-->
   </head>
-
+  <body>
   <header class="navbar">
-    <ul>
+    <ul class="nav-links">
       <li><a href="about-me.html">About Me</a></li>
       <li>
-        <a href="written-works.html" target="_blank"
-        >Written Works</a>
+        <a href="written-works.html">Written Works</a>
       </li>
       <li>
         <a href="index.html">
@@ -22,13 +21,18 @@
         </a>
       </li>
       <li>
-        <a href="art-page.html" target="_blank">Visual Art</a
-        >
+        <a href="art-page.html">Visual Art</a>
       </li>
       <li>
         <a href="photo-gallery.html">Real Life</a>
       </li>
     </ul>
+
+    <div class="menu-toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
   </header>
 
   <section class="aboutme-container">
@@ -69,4 +73,17 @@
     </video>
     <img id="thumbs" src="images/thumbs.jpg" /> -->
   </section>
+
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navLinks = document.querySelector(".nav-links");
+  
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    });
+  </script>
+</body>
 </html>
