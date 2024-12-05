@@ -33,6 +33,11 @@
         <span class="bar"></span>
       </div>
     </header>
+    
+    <div class="full-img" id="fullImgBox">
+      <img src="images/img1.jpg" id="fullImg" />
+      <span onclick="closeFullImg()">x</span>
+    </div>
 
     <div class="img-gallery">
       <img id="june" src="images/june.JPG" onclick="openFullImg(this.src)" />
@@ -51,6 +56,22 @@
     </div>
   </body>
 
+  <!--expanding photos on click-->
+  <script>
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+
+    function openFullImg(pic) {
+      fullImgBox.style.display = "flex"; //changing the display in CSS, making it visible
+      fullImg.src = pic; //updating the src for fullImg
+    }
+
+    function closeFullImg() {
+      fullImgBox.style.display = "none";
+    }
+  </script>
+
+  <!--hamburger menu-->
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const menuToggle = document.querySelector(".menu-toggle");
