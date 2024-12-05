@@ -1,8 +1,10 @@
-html{
-    background: #FAF9F6;
+body {
+  background: url("../images/grid_bg.jpg") no-repeat center center; /*.. to specify one level up bc images is outside of css directory. (for github pages).*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-
-
 
 .nav-links {
   /*shouldnt the parent container do the flexing? then adjust the elements/items? yes.ul is flexing the li*/
@@ -86,22 +88,45 @@ html{
   border-radius: 100px;
 }
 
-.parent-cont{ /*get container1 and 2 aligned*/
-    display: flex;
-    flex-direction: column;
-    
-}
-.container1{ /*get pic, name, and desc aligned.*/
+.parent-cont {
+  /*get container1 and 2 aligned*/
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
-.container{ /*was conflated with index.html container before navbar*/
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  #me{
-    max-width: 50%;
-  }
-  
+.container1 {
+  display: flex;
+  gap: 20%;
+}
+
+#me-pic {
+  object-fit: contain;
+  width: 30rem;
+  height: 75%;
+  margin-left: 25%;
+}
+
+.desc-cont{
+  margin-right: 40%;
+  text-align: right;
+  /* padding: 20%; */
+
+}
+
+.cont1-right{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+#care-chart {
+  width: 35rem;
+}
+#receptify {
+  width: 25rem;
+}
