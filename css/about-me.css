@@ -108,6 +108,7 @@ body {
 .desc-cont{
   margin-right: 40%;
   text-align: right;
+  background-color: rgb(232, 228, 217);;
   /* padding: 20%; */
 
 }
@@ -115,7 +116,7 @@ body {
 .cont1-right{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items:self-start;
 }
 
 .container2 {
