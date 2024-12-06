@@ -50,6 +50,10 @@ body {
 
 /* Responsive styling */
 @media (max-width: 768px) {
+
+  body{
+    overflow-x: hidden; /*is there another way to do this? like messing with media sizes for mobile view?*/
+  }
   .nav-links {
     display: none;
     flex-direction: column;
@@ -100,24 +104,28 @@ body {
     align-items: center;
   }
 
-  pic-cont {
+  /* pic-cont {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+  } */
   #me-pic {
-    width: 30rem;
+    width: auto;
     height: 75%;
-    /* margin-left: 10rem; */
+    margin: 0; /*to remove the margin-left from wider display*/
   }
 
+  .name-cont{
+    margin-left: 3rem;
+  }
   .desc-cont {
-    margin: 0%;
+    margin: 0;
     text-align: center;
     background-color: rgb(232, 228, 217);
     /* padding: 20%; */
     font-size: x-large;
     background-color: none;
+    margin-left: 6rem;
   }
 
   .container2 {
@@ -135,6 +143,8 @@ body {
     width: 25em;
     margin-left: 7rem;
   }
+
+  
 }
 
 /*end of mobile responsive media query*/
@@ -162,9 +172,7 @@ body {
   margin-left: 25%;
   margin-top: 15%;
 }
-/* .name-cont{
-  background-color: rgb(232, 228, 217);;
-} */
+
 .desc-cont {
   /*margin-right: 40%; needed?*/
   text-align: center;
@@ -201,6 +209,6 @@ body {
   text-align: center;
 }
 
-.menu-toggle {
+.menu-toggle { /*needed? we have some above.*/
   display: flex;
 }
